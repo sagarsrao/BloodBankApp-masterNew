@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cc0202"
+    tools:context="blood.rate.app.com.bloodbankapp.GuestOrLoginActivity">
+
+    <TextView
+        android:id="@+id/txt_donor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10sp"
+        android:paddingTop="20dp"
+        android:textSize="20dp" />
+
+
+
+    <EditText
+        android:id="@+id/edName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/edPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edName"
+        android:layout_below="@+id/edName"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Phone" />
+
+    <EditText
+        android:id="@+id/edBloodGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edPhone"
+        android:layout_below="@+id/edPhone"
+        android:layout_marginTop="47dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="BloodGroup" />
+
+    <EditText
+        android:id="@+id/edCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/edBloodGroup"
+        android:layout_below="@+id/edBloodGroup"
+        android:layout_marginTop="31dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="City" />
+
+    <EditText
+        android:id="@+id/edDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edCity"
+        android:layout_below="@+id/edCity"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="date"
+        android:hint="Date" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="Submit" />
+</RelativeLayout>
